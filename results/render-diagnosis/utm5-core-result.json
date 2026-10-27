@@ -1,0 +1,13 @@
+{
+  "utm_version": "5.0.8 (128)",
+  "renderer_backend": "Apple Core OpenGL",
+  "guest_restart": "normal shutdown and start completed",
+  "measured_opengl": "4.1",
+  "hardware_accelerated": true,
+  "ogre2_result": "Failed: generated fragment shader calls texelFetch(usampler2D, int) and texelFetch(sampler2D, int), for which no GLSL overload exists",
+  "ogre2_initial_context_creation": "Passed; earlier OpenGL 3.3 unsupported failure is resolved",
+  "ogre2_software_result": "Still segfaults during Mesa EGL device enumeration, including a test with MESA_LOADER_DRIVER_OVERRIDE=llvmpipe",
+  "ogre1_hardware_result": "Process remains running and log confirms virgl Apple M4 OpenGL 4.1; visible GUI rendering not confirmed after restart",
+  "world": "paused, no PX4 flight process started; one 4 ms initialization step requested",
+  "remaining_issue": "Ogre2 shader generation and graphics-capability compatibility; full fix not achieved"
+}

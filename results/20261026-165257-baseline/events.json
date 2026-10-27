@@ -1,0 +1,41 @@
+[
+  {
+    "event": "preflight",
+    "boot_s": 1.284,
+    "utc": "2026-10-26T08:52:59.726546+00:00"
+  },
+  {
+    "event": "takeoff",
+    "boot_s": 15.084,
+    "utc": "2026-10-26T08:53:16.967189+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "hover_stable",
+    "boot_s": 39.54,
+    "utc": "2026-10-26T08:53:47.516232+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "height_step",
+    "boot_s": 43.54,
+    "utc": "2026-10-26T08:53:52.518288+00:00",
+    "target_height_m": 4.0
+  },
+  {
+    "event": "error",
+    "boot_s": 59.484,
+    "utc": "2026-10-26T08:54:12.524089+00:00",
+    "message": "Did not settle at 4 m"
+  },
+  {
+    "event": "landing",
+    "boot_s": 59.54,
+    "utc": "2026-10-26T08:54:12.579329+00:00"
+  },
+  {
+    "event": "landed_disarmed",
+    "boot_s": 71.14,
+    "utc": "2026-10-26T08:54:27.102417+00:00"
+  }
+]

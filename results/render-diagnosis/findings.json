@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-26",
+  "utm_version": "4.7.5 (118)",
+  "vm_gpu": "virtio-gpu-gl-pci",
+  "mesa_version": "25.2.8",
+  "hardware_renderer": "virgl / ANGLE Metal / Apple M4",
+  "hardware_opengl_version": "2.1",
+  "hardware_glsl_version": "1.20",
+  "hardware_max_core_profile": "0.0",
+  "hardware_accelerated": true,
+  "software_renderer": "llvmpipe LLVM 20.1.2",
+  "software_opengl_version": "4.5",
+  "dri3_disabled_opengl_version": "2.1",
+  "default_failure": "Ogre2 reports OpenGL 3.3 unsupported; fails dummy render-window creation after 11 attempts, then segfaults in Ogre::Hlms::createDatablock",
+  "software_failure": "Ogre2 EGL device enumeration selects /dev/dri/card0. Mesa reports software rendering conflicts with explicit hardware selection, then segfaults in libgallium via driCreateNewScreen3",
+  "confidence": "Hardware API mismatch confirmed by independent glxinfo and error log. Exact source-level cause of secondary EGL segfault not established.",
+  "other_failure": "Ogre1 AxisAlignedBox assertion is a separate observed crash; its trigger has not been established.",
+  "configuration_changes_this_investigation": "None to UTM, graphics drivers, or the running flight setup. mesa-utils-bin extracted in project directory for read-only probes.",
+  "sources": [
+    "https://gazebosim.org/docs/latest/troubleshooting/",
+    "https://github.com/utmapp/UTM/issues/4285",
+    "https://github.com/utmapp/UTM/pull/7576",
+    "https://docs.getutm.app/updates/v5.0/"
+  ]
+}

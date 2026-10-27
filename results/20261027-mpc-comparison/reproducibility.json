@@ -1,0 +1,21 @@
+{
+  "python": "3.12.3",
+  "architecture": "aarch64",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "osqp": "1.1.3",
+    "pymavlink": "2.4.50",
+    "pyulog": "1.3.0",
+    "pandas": "3.1.0",
+    "matplotlib": "3.11.2"
+  },
+  "source_snapshot_sha256": {
+    "altitude_mpc.py": "bbb1ee18fe8add2ae3654968981d75b4c33e459b7c5d6d4704c7aff998d0cd53",
+    "run_experiment.py": "77a57e7c650f22589464f8ef9fdfcf303969b1a4cd84c101016ef836f3867fd9",
+    "analyze.py": "cfe90a82a5d0cbfed3d5cd4536b8a8837b4a55bcb0802ed5527adbae9952f8fa",
+    "compare_controllers.py": "01a6f862e3829a882adcf69d63fd81a70cdaf0ed3ccc11038254171d9ab20050",
+    "test_altitude_mpc.py": "b67edcd51df599917f5acc2b433597f57477b8352fadb928a2299de4e4bc64be",
+    "run-gazebo.sh": "9ae1a3a0b8d1ff129dc424a4a404abc93cdf4a02d1c56191b4686ca23888fada"
+  }
+}

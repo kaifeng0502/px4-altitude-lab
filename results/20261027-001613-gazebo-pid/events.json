@@ -1,0 +1,50 @@
+[
+  {
+    "event": "preflight",
+    "boot_s": 6.116,
+    "utc": "2026-10-26T16:16:20.440145+00:00"
+  },
+  {
+    "event": "ground_reference",
+    "boot_s": 20.616,
+    "utc": "2026-10-26T16:16:35.441682+00:00",
+    "ned_z_m": 0.05180312693119049,
+    "sample_count": 61
+  },
+  {
+    "event": "takeoff",
+    "boot_s": 21.864,
+    "utc": "2026-10-26T16:16:36.730437+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "hover_stable",
+    "boot_s": 32.612,
+    "utc": "2026-10-26T16:16:47.797075+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "height_step",
+    "boot_s": 42.616,
+    "utc": "2026-10-26T16:16:57.879651+00:00",
+    "target_height_m": 4.0
+  },
+  {
+    "event": "step_observation_complete",
+    "boot_s": 72.668,
+    "utc": "2026-10-26T16:17:28.909507+00:00",
+    "final_height_m": 3.9964349418878555,
+    "final_up_velocity_m_s": 0.0026223259046673775,
+    "observation_sim_s": 30
+  },
+  {
+    "event": "landing",
+    "boot_s": 72.716,
+    "utc": "2026-10-26T16:17:28.966549+00:00"
+  },
+  {
+    "event": "landed_disarmed",
+    "boot_s": 82.916,
+    "utc": "2026-10-26T16:17:39.207286+00:00"
+  }
+]

@@ -1,0 +1,8 @@
+# Full experiment/analysis dependencies; not a complete environment lockfile.
+# MPC solver versions match the verified experiment (requirements-mpc.txt).
+-r requirements-mpc.txt
+numpy
+matplotlib
+pandas
+pyulog
+pymavlink

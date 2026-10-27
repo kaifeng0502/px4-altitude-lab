@@ -1,0 +1,16 @@
+{
+  "px4_commit": "d6f12ad1c4f70ad3230afd7d86e971421e02fef4",
+  "model": "gz_x500",
+  "simulator": "gazebo",
+  "instance": 4,
+  "label": "gazebo",
+  "simulation": true,
+  "status": "completed",
+  "initial_height_m": 2,
+  "final_height_m": 4,
+  "observation_sim_s": 30,
+  "ulog_files": [
+    "runtime/log/2026-10-26/10_28_56.ulg"
+  ],
+  "ground_reference_ned_z_m": -0.018048077821731567
+}

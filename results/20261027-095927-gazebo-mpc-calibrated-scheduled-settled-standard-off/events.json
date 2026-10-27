@@ -1,0 +1,153 @@
+[
+  {
+    "event": "preflight",
+    "boot_s": 5.58,
+    "utc": "2026-10-27T01:59:33.260230+00:00"
+  },
+  {
+    "event": "ground_alignment_wait",
+    "boot_s": 5.636,
+    "utc": "2026-10-27T01:59:33.312608+00:00",
+    "elapsed_sim_s": 0.05600000000000005,
+    "quality": {
+      "ready": false,
+      "sample_count": 42
+    }
+  },
+  {
+    "event": "ground_alignment_wait",
+    "boot_s": 20.684,
+    "utc": "2026-10-27T01:59:48.402622+00:00",
+    "elapsed_sim_s": 15.104000000000001,
+    "quality": {
+      "ready": false,
+      "sample_count": 501,
+      "height_std_m": 0.026521067133304606,
+      "height_slope_ned_m_s": 0.007727496866489766,
+      "mean_ned_velocity_m_s": 0.040295836833601224,
+      "rms_ned_velocity_m_s": 0.04077461145216557,
+      "window_s": 10.0
+    }
+  },
+  {
+    "event": "ground_alignment_wait",
+    "boot_s": 35.748,
+    "utc": "2026-10-27T02:00:03.502753+00:00",
+    "elapsed_sim_s": 30.168,
+    "quality": {
+      "ready": false,
+      "sample_count": 501,
+      "height_std_m": 0.01827293761120633,
+      "height_slope_ned_m_s": -0.00400079650763511,
+      "mean_ned_velocity_m_s": -0.007577387722084316,
+      "rms_ned_velocity_m_s": 0.016662825143238663,
+      "window_s": 10.0
+    }
+  },
+  {
+    "event": "ground_alignment_wait",
+    "boot_s": 50.808,
+    "utc": "2026-10-27T02:00:18.624442+00:00",
+    "elapsed_sim_s": 45.228,
+    "quality": {
+      "ready": false,
+      "sample_count": 501,
+      "height_std_m": 0.011843614610556014,
+      "height_slope_ned_m_s": 0.002637629965963593,
+      "mean_ned_velocity_m_s": 0.015076711048890731,
+      "rms_ned_velocity_m_s": 0.015302839744562547,
+      "window_s": 10.0
+    }
+  },
+  {
+    "event": "ground_alignment_complete",
+    "boot_s": 58.628,
+    "utc": "2026-10-27T02:00:26.480138+00:00",
+    "elapsed_sim_s": 53.048,
+    "quality": {
+      "ready": true,
+      "sample_count": 501,
+      "height_std_m": 0.004932357572454417,
+      "height_slope_ned_m_s": 0.00022194224077666416,
+      "mean_ned_velocity_m_s": 0.013788913010420676,
+      "rms_ned_velocity_m_s": 0.01402291426175726,
+      "window_s": 10.0
+    }
+  },
+  {
+    "event": "ground_reference",
+    "boot_s": 58.628,
+    "utc": "2026-10-27T02:00:26.481177+00:00",
+    "ned_z_m": -0.006411612033843994,
+    "sample_count": 151
+  },
+  {
+    "event": "takeoff",
+    "boot_s": 60.408,
+    "utc": "2026-10-27T02:00:28.275489+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "hover_stable",
+    "boot_s": 71.844,
+    "utc": "2026-10-27T02:00:39.748645+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "controller_switch",
+    "boot_s": 71.844,
+    "utc": "2026-10-27T02:00:39.749247+00:00",
+    "controller": "mpc",
+    "target_height_m": 2.0,
+    "config": {
+      "type": "affine_two_state_linear_mpc",
+      "dt": 0.1,
+      "horizon": 30,
+      "height_weight": 12.0,
+      "velocity_weight": 3.0,
+      "acceleration_weight": 0.2,
+      "delta_acceleration_weight": 0.8,
+      "velocity_slack_weight": 1000.0,
+      "max_velocity": 1.5,
+      "min_acceleration": -2.0,
+      "max_acceleration": 2.0,
+      "max_jerk": 5.0,
+      "acceleration_gain": 1.5492651348831779,
+      "acceleration_bias": 0.041089602835091,
+      "state": [
+        "ground_relative_height_m",
+        "up_velocity_m_s"
+      ],
+      "input": "net_up_acceleration_m_s2",
+      "disturbance_observer": false,
+      "terminal_cost": "discrete LQR on height and velocity",
+      "prediction_equation": "h_dot=v; v_dot=acceleration_gain*u+acceleration_bias",
+      "equilibrium_command_m_s2": -0.026521995435074032,
+      "constraints": "soft predicted speed bound with quadratic slack penalty; hard acceleration and delta-acceleration bounds"
+    }
+  },
+  {
+    "event": "height_step",
+    "boot_s": 81.904,
+    "utc": "2026-10-27T02:00:49.810543+00:00",
+    "target_height_m": 4.0
+  },
+  {
+    "event": "step_observation_complete",
+    "boot_s": 111.904,
+    "utc": "2026-10-27T02:01:19.879885+00:00",
+    "final_height_m": 3.9928030371665955,
+    "final_up_velocity_m_s": -0.0012955211568623781,
+    "observation_sim_s": 30
+  },
+  {
+    "event": "landing",
+    "boot_s": 111.968,
+    "utc": "2026-10-27T02:01:19.932755+00:00"
+  },
+  {
+    "event": "landed_disarmed",
+    "boot_s": 121.368,
+    "utc": "2026-10-27T02:01:29.348322+00:00"
+  }
+]

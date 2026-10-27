@@ -1,0 +1,13 @@
+.DS_Store
+.firecrawl/
+.venv/
+vendor/
+__pycache__/
+*.py[cod]
+runtime-resources/
+.env
+.env.*
+*.pem
+*.key
+# Captured experiment evidence is added explicitly; new runtime output stays local.
+results/**

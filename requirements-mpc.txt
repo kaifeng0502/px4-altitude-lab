@@ -1,0 +1,4 @@
+# Install inside the existing experiment .venv (numpy is already a dependency).
+# Versions used for the first verified MPC experiment.
+scipy==1.18.1
+osqp==1.1.3

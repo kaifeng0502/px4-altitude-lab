@@ -1,0 +1,15 @@
+{
+  "px4_commit": "d6f12ad1c4f70ad3230afd7d86e971421e02fef4",
+  "model": "sihsim_quadx",
+  "instance": 4,
+  "label": "ground-relative",
+  "simulation": true,
+  "status": "completed",
+  "initial_height_m": 2,
+  "final_height_m": 4,
+  "observation_sim_s": 30,
+  "ulog_files": [
+    "runtime/log/2026-10-26/08_59_26.ulg"
+  ],
+  "ground_reference_ned_z_m": -0.468841552734375
+}

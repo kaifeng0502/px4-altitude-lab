@@ -1,0 +1,79 @@
+[
+  {
+    "event": "preflight",
+    "boot_s": 5.3,
+    "utc": "2026-10-26T16:14:46.452802+00:00"
+  },
+  {
+    "event": "ground_reference",
+    "boot_s": 17.748,
+    "utc": "2026-10-26T16:15:01.455179+00:00",
+    "ned_z_m": 0.016315624117851257,
+    "sample_count": 60
+  },
+  {
+    "event": "takeoff",
+    "boot_s": 19.096,
+    "utc": "2026-10-26T16:15:02.790783+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "hover_stable",
+    "boot_s": 30.3,
+    "utc": "2026-10-26T16:15:14.069555+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "controller_switch",
+    "boot_s": 30.3,
+    "utc": "2026-10-26T16:15:14.070466+00:00",
+    "controller": "mpc",
+    "target_height_m": 2.0,
+    "config": {
+      "type": "nominal_linear_mpc",
+      "dt": 0.1,
+      "horizon": 30,
+      "height_weight": 12.0,
+      "velocity_weight": 3.0,
+      "acceleration_weight": 0.2,
+      "delta_acceleration_weight": 0.8,
+      "velocity_slack_weight": 1000.0,
+      "max_velocity": 1.5,
+      "min_acceleration": -2.0,
+      "max_acceleration": 2.0,
+      "max_jerk": 5.0,
+      "state": [
+        "ground_relative_height_m",
+        "up_velocity_m_s"
+      ],
+      "input": "net_up_acceleration_m_s2",
+      "disturbance_observer": false,
+      "terminal_cost": "discrete LQR on height and velocity",
+      "constraints": "soft predicted speed bound with quadratic slack penalty; hard acceleration and delta-acceleration bounds"
+    }
+  },
+  {
+    "event": "height_step",
+    "boot_s": 40.348,
+    "utc": "2026-10-26T16:15:24.174371+00:00",
+    "target_height_m": 4.0
+  },
+  {
+    "event": "step_observation_complete",
+    "boot_s": 70.4,
+    "utc": "2026-10-26T16:15:54.324180+00:00",
+    "final_height_m": 3.9642442911863327,
+    "final_up_velocity_m_s": 0.03616984561085701,
+    "observation_sim_s": 30
+  },
+  {
+    "event": "landing",
+    "boot_s": 70.448,
+    "utc": "2026-10-26T16:15:54.376497+00:00"
+  },
+  {
+    "event": "landed_disarmed",
+    "boot_s": 80.044,
+    "utc": "2026-10-26T16:16:04.101386+00:00"
+  }
+]

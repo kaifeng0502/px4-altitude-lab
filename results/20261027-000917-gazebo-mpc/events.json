@@ -1,0 +1,36 @@
+[
+  {
+    "event": "preflight",
+    "boot_s": 213.168,
+    "utc": "2026-10-26T16:09:23.665296+00:00"
+  },
+  {
+    "event": "ground_reference",
+    "boot_s": 228.172,
+    "utc": "2026-10-26T16:09:38.666373+00:00",
+    "ned_z_m": 0.038072988390922546,
+    "sample_count": 61
+  },
+  {
+    "event": "takeoff",
+    "boot_s": 230.02,
+    "utc": "2026-10-26T16:09:40.525295+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "error",
+    "boot_s": 279.772,
+    "utc": "2026-10-26T16:10:30.579207+00:00",
+    "message": "Could not establish 2 m hover"
+  },
+  {
+    "event": "landing",
+    "boot_s": 279.82,
+    "utc": "2026-10-26T16:10:30.633976+00:00"
+  },
+  {
+    "event": "landed_disarmed",
+    "boot_s": 304.976,
+    "utc": "2026-10-26T16:10:55.964609+00:00"
+  }
+]

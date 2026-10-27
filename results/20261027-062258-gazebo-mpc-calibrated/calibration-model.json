@@ -1,0 +1,163 @@
+{
+  "acceleration_gain": 1.5492651348831779,
+  "acceleration_bias": 0.041089602835091,
+  "source": {
+    "training_run": "20261027-001439-gazebo-mpc",
+    "validation_run": "20261027-001613-gazebo-pid",
+    "training_window_from_step_s": [
+      0,
+      6
+    ],
+    "training_sample_count": 300,
+    "model_order": 2,
+    "acceleration_gain": 1.5492651348831779,
+    "acceleration_bias": 0.041089602835091,
+    "equation": "h_dot=v; v_dot=K*u+b",
+    "training_nominal_acceleration_rmse": 0.6262320572962858,
+    "training_calibrated_acceleration_rmse": 0.24992166246098385,
+    "validation_dynamic_samples": 83,
+    "validation_nominal_acceleration_rmse": 0.5274597955855747,
+    "validation_calibrated_acceleration_rmse": 0.30862856556765644,
+    "validation_velocity_windows": {
+      "window_s": 0.2,
+      "count": 27,
+      "nominal_delta_velocity_rmse_m_s": 0.042963536467130276,
+      "calibrated_delta_velocity_rmse_m_s": 0.0136132871855116
+    },
+    "nonnegative_delay_scan": [
+      {
+        "delay_s": 0.0,
+        "gain": 1.5492651348831779,
+        "bias": 0.041089602835091,
+        "training_acceleration_rmse": 0.24992166246098385
+      },
+      {
+        "delay_s": 0.01,
+        "gain": 1.5446802125936465,
+        "bias": 0.04358048421322414,
+        "training_acceleration_rmse": 0.27465834139702394
+      },
+      {
+        "delay_s": 0.02,
+        "gain": 1.5412807557353494,
+        "bias": 0.04104792204555461,
+        "training_acceleration_rmse": 0.29900877108866375
+      },
+      {
+        "delay_s": 0.03,
+        "gain": 1.5333888415321502,
+        "bias": 0.043122059256345185,
+        "training_acceleration_rmse": 0.33671713672377834
+      },
+      {
+        "delay_s": 0.04,
+        "gain": 1.5259291550664376,
+        "bias": 0.040458393325098575,
+        "training_acceleration_rmse": 0.3751784737508567
+      },
+      {
+        "delay_s": 0.05,
+        "gain": 1.5158576066490215,
+        "bias": 0.042442469744777826,
+        "training_acceleration_rmse": 0.4144106276238461
+      },
+      {
+        "delay_s": 0.06,
+        "gain": 1.5054146888888078,
+        "bias": 0.03971955677570068,
+        "training_acceleration_rmse": 0.45670862050940436
+      },
+      {
+        "delay_s": 0.07,
+        "gain": 1.4917980495751542,
+        "bias": 0.04156392597083247,
+        "training_acceleration_rmse": 0.500736314988093
+      },
+      {
+        "delay_s": 0.08,
+        "gain": 1.4781048082735477,
+        "bias": 0.038784854562001765,
+        "training_acceleration_rmse": 0.5453917364537438
+      },
+      {
+        "delay_s": 0.09,
+        "gain": 1.4615247404592329,
+        "bias": 0.04049786609533313,
+        "training_acceleration_rmse": 0.5902100267621732
+      },
+      {
+        "delay_s": 0.1,
+        "gain": 1.4449425015997244,
+        "bias": 0.03768368705472703,
+        "training_acceleration_rmse": 0.6349653809033025
+      },
+      {
+        "delay_s": 0.11,
+        "gain": 1.425084937398575,
+        "bias": 0.039247391052981404,
+        "training_acceleration_rmse": 0.6805806416963168
+      },
+      {
+        "delay_s": 0.12,
+        "gain": 1.4038560274203329,
+        "bias": 0.03635715198539936,
+        "training_acceleration_rmse": 0.7285939413897021
+      },
+      {
+        "delay_s": 0.13,
+        "gain": 1.38085137651115,
+        "bias": 0.03776095424872816,
+        "training_acceleration_rmse": 0.7737575864789958
+      },
+      {
+        "delay_s": 0.14,
+        "gain": 1.3564984753340579,
+        "bias": 0.0347601590891545,
+        "training_acceleration_rmse": 0.8206320457835298
+      },
+      {
+        "delay_s": 0.15,
+        "gain": 1.3315274933565595,
+        "bias": 0.036036422304780054,
+        "training_acceleration_rmse": 0.8630003845450609
+      },
+      {
+        "delay_s": 0.16,
+        "gain": 1.3050202633290746,
+        "bias": 0.033059252042099724,
+        "training_acceleration_rmse": 0.9071291632068845
+      },
+      {
+        "delay_s": 0.17,
+        "gain": 1.2770801289216587,
+        "bias": 0.03417195635064783,
+        "training_acceleration_rmse": 0.948601157757735
+      },
+      {
+        "delay_s": 0.18,
+        "gain": 1.2477598806479369,
+        "bias": 0.031208698866976914,
+        "training_acceleration_rmse": 0.9911235270365517
+      },
+      {
+        "delay_s": 0.19,
+        "gain": 1.2165450940965585,
+        "bias": 0.032140868567054455,
+        "training_acceleration_rmse": 1.0318233070098348
+      },
+      {
+        "delay_s": 0.2,
+        "gain": 1.1858750497918729,
+        "bias": 0.029244298131619374,
+        "training_acceleration_rmse": 1.0707959200364372
+      }
+    ],
+    "limitations": "Local closed-loop EKF fit; no instrumental-variable correction; measurement alignment may mask physical delay; no truth in feedback",
+    "data_sha256": {
+      "20261027-001439-gazebo-mpc/vehicle_local_position.csv": "fd364eee93c930870cb8e50bf404afedce757c25b04572766d71385356e76d37",
+      "20261027-001439-gazebo-mpc/vehicle_local_position_setpoint.csv": "182b2f1f5304fd2eb7fd7ab67d478b8da6d6786d8318f47f722ef5b41ce7ee50",
+      "20261027-001613-gazebo-pid/vehicle_local_position.csv": "367f91f81d93a488fe05b0a83983543bb265c66472a9b507aa753d814303cb51",
+      "20261027-001613-gazebo-pid/vehicle_local_position_setpoint.csv": "6053282bffcb1531aba81b796b9a9737f7bf47dada1be3e7ebcf40525b0358cf"
+    }
+  }
+}

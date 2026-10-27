@@ -1,0 +1,83 @@
+[
+  {
+    "event": "preflight",
+    "boot_s": 5.216,
+    "utc": "2026-10-26T22:21:04.010121+00:00"
+  },
+  {
+    "event": "ground_reference",
+    "boot_s": 20.164,
+    "utc": "2026-10-26T22:21:19.010627+00:00",
+    "ned_z_m": 0.023830778896808624,
+    "sample_count": 60
+  },
+  {
+    "event": "takeoff",
+    "boot_s": 22.012,
+    "utc": "2026-10-26T22:21:20.822543+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "hover_stable",
+    "boot_s": 33.36,
+    "utc": "2026-10-26T22:21:32.214446+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "controller_switch",
+    "boot_s": 33.36,
+    "utc": "2026-10-26T22:21:32.214780+00:00",
+    "controller": "mpc",
+    "target_height_m": 2.0,
+    "config": {
+      "type": "nominal_linear_mpc",
+      "dt": 0.1,
+      "horizon": 30,
+      "height_weight": 12.0,
+      "velocity_weight": 3.0,
+      "acceleration_weight": 0.2,
+      "delta_acceleration_weight": 0.8,
+      "velocity_slack_weight": 1000.0,
+      "max_velocity": 1.5,
+      "min_acceleration": -2.0,
+      "max_acceleration": 2.0,
+      "max_jerk": 5.0,
+      "acceleration_gain": 1.0,
+      "acceleration_bias": 0.0,
+      "state": [
+        "ground_relative_height_m",
+        "up_velocity_m_s"
+      ],
+      "input": "net_up_acceleration_m_s2",
+      "disturbance_observer": false,
+      "terminal_cost": "discrete LQR on height and velocity",
+      "prediction_equation": "h_dot=v; v_dot=acceleration_gain*u+acceleration_bias",
+      "equilibrium_command_m_s2": -0.0,
+      "constraints": "soft predicted speed bound with quadratic slack penalty; hard acceleration and delta-acceleration bounds"
+    }
+  },
+  {
+    "event": "height_step",
+    "boot_s": 43.416,
+    "utc": "2026-10-26T22:21:42.296067+00:00",
+    "target_height_m": 4.0
+  },
+  {
+    "event": "step_observation_complete",
+    "boot_s": 73.46,
+    "utc": "2026-10-26T22:22:12.370233+00:00",
+    "final_height_m": 3.9880963638424873,
+    "final_up_velocity_m_s": 0.016737420111894608,
+    "observation_sim_s": 30
+  },
+  {
+    "event": "landing",
+    "boot_s": 73.516,
+    "utc": "2026-10-26T22:22:12.424160+00:00"
+  },
+  {
+    "event": "landed_disarmed",
+    "boot_s": 82.96,
+    "utc": "2026-10-26T22:22:21.898509+00:00"
+  }
+]

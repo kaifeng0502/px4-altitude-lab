@@ -1,0 +1,22 @@
+{
+  "source_sha256": {
+    "scripts/run_experiment.py": "a2bd12d358f3eb9e0a7b00b0aff51869500698b9382185d3bf9a35dc799092df",
+    "scripts/flight_quality.py": "11d95fc5b0d250cf36c857fa4ebd9a3240700357b5484ae7406e489b4b95dad6",
+    "scripts/altitude_mpc.py": "81b8ab3f8bf6d42f066e91f9d3f2e97a392a14ca8fa690b703874de99b923193",
+    "scripts/control_clock.py": "5bf477ca88a87277050fe4e987f1ea1baf78c5192124b0696512ecb0d09cbae9",
+    "scripts/analyze.py": "38210a1efcdec052dc296f237a9e2804dcae3381d530ba324f28ba07d9b748fa",
+    "scripts/compare_flight_pipeline.py": "ea2db58879285fb40c17ca1a775dab19701eb574455eeb075e4f9347c1161118",
+    "scripts/test_flight_quality.py": "bf886a7f51a121fe978cf8684027e81429c74364b1ed114cb4cf00100b4ec673",
+    "scripts/test_bias_closed_loop.py": "37109af04bc8b48d0583d7e268262f45d5903d173104c8013251cf9100d590a8",
+    "scripts/run-gazebo.sh": "284695ca2d1fa0030be0e2f444aeaf3ea36054bc17d339c936f58bedf87396f1",
+    "scripts/run-on-vm.sh": "bade8a36b66bc7a0c102e658d11a92a0f33c3f5351505791a5d0495f4f11b6d3",
+    "config/calibrated-altitude-model.json": "da1585acff39cd39a4f9ef8cd23364cbfda323fe71049e9bf56f1c69a18fb28f"
+  },
+  "core_mpc_math_unchanged": true,
+  "ground_and_compensator_behavior_tests_passed": 2,
+  "bias_closed_loop_test_passed": true,
+  "updated_receive_solve_send_test_passed": true,
+  "six_completed_landed_flights_no_log_dropouts": true,
+  "ekf_parameters_unchanged": true,
+  "truth_used_online": false
+}

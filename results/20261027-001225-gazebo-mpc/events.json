@@ -1,0 +1,76 @@
+[
+  {
+    "event": "preflight",
+    "boot_s": 5.836,
+    "utc": "2026-10-26T16:12:31.466820+00:00"
+  },
+  {
+    "event": "ground_reference",
+    "boot_s": 20.788,
+    "utc": "2026-10-26T16:12:46.472459+00:00",
+    "ned_z_m": 0.1325850486755371,
+    "sample_count": 61
+  },
+  {
+    "event": "takeoff",
+    "boot_s": 22.636,
+    "utc": "2026-10-26T16:12:48.341396+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "hover_stable",
+    "boot_s": 33.488,
+    "utc": "2026-10-26T16:12:59.239745+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "controller_switch",
+    "boot_s": 33.488,
+    "utc": "2026-10-26T16:12:59.240229+00:00",
+    "controller": "mpc",
+    "target_height_m": 2.0,
+    "config": {
+      "type": "nominal_linear_mpc",
+      "dt": 0.1,
+      "horizon": 30,
+      "height_weight": 12.0,
+      "velocity_weight": 3.0,
+      "acceleration_weight": 0.2,
+      "delta_acceleration_weight": 0.8,
+      "max_velocity": 1.5,
+      "min_acceleration": -2.0,
+      "max_acceleration": 2.0,
+      "max_jerk": 5.0,
+      "state": [
+        "ground_relative_height_m",
+        "up_velocity_m_s"
+      ],
+      "input": "net_up_acceleration_m_s2",
+      "disturbance_observer": false,
+      "terminal_cost": "discrete LQR on height and velocity",
+      "constraints": "hard bounds on predicted velocity, commanded acceleration and delta acceleration"
+    }
+  },
+  {
+    "event": "height_step",
+    "boot_s": 43.488,
+    "utc": "2026-10-26T16:13:09.242327+00:00",
+    "target_height_m": 4.0
+  },
+  {
+    "event": "error",
+    "boot_s": 44.136,
+    "utc": "2026-10-26T16:13:09.897160+00:00",
+    "message": "MPC QP failed: primal infeasible"
+  },
+  {
+    "event": "landing",
+    "boot_s": 44.184,
+    "utc": "2026-10-26T16:13:09.951114+00:00"
+  },
+  {
+    "event": "landed_disarmed",
+    "boot_s": 53.636,
+    "utc": "2026-10-26T16:13:19.420459+00:00"
+  }
+]

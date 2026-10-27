@@ -1,0 +1,43 @@
+{
+  "px4_commit": "d6f12ad1c4f70ad3230afd7d86e971421e02fef4",
+  "model": "gz_x500",
+  "simulator": "gazebo",
+  "controller": "mpc",
+  "instance": 4,
+  "label": "gazebo-mpc",
+  "simulation": true,
+  "status": "failed",
+  "initial_height_m": 2,
+  "final_height_m": 4,
+  "observation_sim_s": 30,
+  "error": "MPC QP failed: primal infeasible",
+  "mpc": {
+    "type": "nominal_linear_mpc",
+    "dt": 0.1,
+    "horizon": 30,
+    "height_weight": 12.0,
+    "velocity_weight": 3.0,
+    "acceleration_weight": 0.2,
+    "delta_acceleration_weight": 0.8,
+    "max_velocity": 1.5,
+    "min_acceleration": -2.0,
+    "max_acceleration": 2.0,
+    "max_jerk": 5.0,
+    "state": [
+      "ground_relative_height_m",
+      "up_velocity_m_s"
+    ],
+    "input": "net_up_acceleration_m_s2",
+    "disturbance_observer": false,
+    "terminal_cost": "discrete LQR on height and velocity",
+    "constraints": "hard bounds on predicted velocity, commanded acceleration and delta acceleration",
+    "solve_count": 105,
+    "max_solve_ms": 2.5770169995666947,
+    "max_update_interval_sim_s": 0.15200000000000102,
+    "activation": "after PX4-controlled takeoff and stable 2 m hover"
+  },
+  "ulog_files": [
+    "runtime/log/2026-10-26/16_12_30.ulg"
+  ],
+  "ground_reference_ned_z_m": 0.1325850486755371
+}

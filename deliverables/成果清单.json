@@ -1,0 +1,616 @@
+{
+  "date": "2026-10-27",
+  "purpose": "轻量仿真实验归档，非完整环境备份",
+  "selected_defaults": {
+    "ground_init": "settled",
+    "motion_profile": "gentle",
+    "bias_compensation": "off",
+    "reason": "The optional bounded reference integral was implemented and flown twice but did not consistently improve physical endpoint accuracy."
+  },
+  "files": {
+    ".gitignore": {
+      "bytes": 198,
+      "sha256": "80c43fbc86fb5e95b9339bbf28af1363fb081036791063b53da9f2f6775844ad"
+    },
+    "EXPERIMENT_NOTES.md": {
+      "bytes": 23620,
+      "sha256": "4a28c966338b8e7a67df1e44c6290d2c7a1a2ab878f04fa24896c00b6ec005cf"
+    },
+    "README.md": {
+      "bytes": 8426,
+      "sha256": "488aa4315a81be81b14e6538654569c83976de64a09d49f8bf3e2d31cffcea35"
+    },
+    "RESULTS.md": {
+      "bytes": 19516,
+      "sha256": "a7bcbd39f985acf78c08839263e5a35823c3e91fc19b6b593d4598264f80d9de"
+    },
+    "config/calibrated-altitude-model.json": {
+      "bytes": 5454,
+      "sha256": "da1585acff39cd39a4f9ef8cd23364cbfda323fe71049e9bf56f1c69a18fb28f"
+    },
+    "deliverables/成果说明.html": {
+      "bytes": 9252,
+      "sha256": "12f3e60ea4c830d5eb81b437b99e381abfda9ff3a9c5d0116e9226306d7e861a"
+    },
+    "deliverables/最终效果对比.pdf": {
+      "bytes": 79583,
+      "sha256": "bf521e9b7416fe830472a5666e7cfbcc90e292019cfeeac823a406fbca6fa3af"
+    },
+    "deliverables/最终效果对比.png": {
+      "bytes": 444681,
+      "sha256": "28e1bb760519702d3c23696c7a1b4bb2af6b7ba8d70b2fb146ad04d38cfdc762"
+    },
+    "requirements-mpc.txt": {
+      "bytes": 161,
+      "sha256": "12ca90802b0fbe7c3fc09cf77bac1ac13470e9f50864bffb923d8def31ec5383"
+    },
+    "requirements.txt": {
+      "bytes": 219,
+      "sha256": "7bb194a717ed9d889ff3fc4b1c326bc2fae5e86a64ea8c8042dbb13059c6980f"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/calibration-model.json": {
+      "bytes": 5454,
+      "sha256": "da1585acff39cd39a4f9ef8cd23364cbfda323fe71049e9bf56f1c69a18fb28f"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/controller.csv": {
+      "bytes": 107359,
+      "sha256": "6c4834b73ea61a95fa1209246debd3f900f6ed232c96885aaa09eb26826e9e7d"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/estimator-parameters.json": {
+      "bytes": 3807,
+      "sha256": "76521c7e2bd81f43e122cd4010bea832e3478b87c8cfdd6052ff3cd435c4866a"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/events.json": {
+      "bytes": 2269,
+      "sha256": "dadb9279cc30f806d4e98aee8034cad0385b5636d1632a6d4e1652a24efd10a9"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/metadata.json": {
+      "bytes": 1711,
+      "sha256": "f8625e7cb1c78a8b5285e4617b20ac48890e3771b6563280287279b17b7e9cf5"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/metrics.json": {
+      "bytes": 1583,
+      "sha256": "240dd9b8199a8a3cc41800f0c2ca1698360360db210d047b70a2c36fe5b9f39e"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/mpc-predictions.jsonl": {
+      "bytes": 1372560,
+      "sha256": "23128bb8dff31d5aa5c99857d037cae7f07b1aedb226db8e59d49923806f5138"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/parameters.json": {
+      "bytes": 3586,
+      "sha256": "481bccf9852f82de7716c9ba23b13598c480e4e87c6a6e914a6cadc4d4912f4c"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/response.csv": {
+      "bytes": 180008,
+      "sha256": "7ccb4804caacbf0c562bc44692526166971429f99018a5d9fc9129cfb824b9e7"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/telemetry.csv": {
+      "bytes": 280470,
+      "sha256": "845c07a988e93a906282292f0bc3b214e1daf5e9243e571a983b84161bd62fe5"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/trajectory_setpoint.csv": {
+      "bytes": 37199,
+      "sha256": "da0b2eeea136bcbb5c55021d58cd96c0a1cc37a8fb38dafd5b82a7e3696ae7db"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/vehicle_land_detected.csv": {
+      "bytes": 3677,
+      "sha256": "e2e5663b402fe0d358378e219086d9c35b95f7c01c9f11b1c5198ae0a606ab7d"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/vehicle_local_position.csv": {
+      "bytes": 4496362,
+      "sha256": "3448411e28a278060f5525bdfde7ecb66bb80313763fcccb590f7c66c3d5a066"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/vehicle_local_position_groundtruth.csv": {
+      "bytes": 1251586,
+      "sha256": "1a3b2930ed7a570bf76bde15eab008e0ef92b6b7020d5ca051c0a5f9de937396"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/vehicle_local_position_setpoint.csv": {
+      "bytes": 105728,
+      "sha256": "208610eb4739f9bf0f640dae66f5c25e4daa119af63b9759c08a47025cb98bcd"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/vehicle_status.csv": {
+      "bytes": 23935,
+      "sha256": "f5faf20cd80e58012fd67e0a2d13df9e2b7dad95a545f4938bd653e08ae218f7"
+    },
+    "results/20261027-093754-gazebo-mpc-calibrated-scheduled/vehicle_thrust_setpoint.csv": {
+      "bytes": 171273,
+      "sha256": "9ff64593e568742fca971a9017c2ec32f54059403f0a971b08e0b5b092388b78"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/calibration-model.json": {
+      "bytes": 5454,
+      "sha256": "da1585acff39cd39a4f9ef8cd23364cbfda323fe71049e9bf56f1c69a18fb28f"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/controller.csv": {
+      "bytes": 121817,
+      "sha256": "da375bc12ddb2f4df169ec1fac6e4f0678362532638d1e8717f4a6f06c0951af"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/estimator-parameters.json": {
+      "bytes": 3807,
+      "sha256": "76521c7e2bd81f43e122cd4010bea832e3478b87c8cfdd6052ff3cd435c4866a"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/events.json": {
+      "bytes": 4282,
+      "sha256": "21fb29ea7fe5c5c345dacfb2e5fabbf429e042e834a4de600d5972fca32f91a3"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/metadata.json": {
+      "bytes": 1859,
+      "sha256": "be0afd0d4728d656d7b88842e20a8398b16c01de43405eb14a592f615dcd6c52"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/metrics.json": {
+      "bytes": 1577,
+      "sha256": "dba59c27382b5b4729d0a0c005624268042399115f38f361f962c5a317be437d"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/mpc-predictions.jsonl": {
+      "bytes": 1424666,
+      "sha256": "19ca25c510631a7550e97137ec7621fc6a961c80e14d6d24ebb134d3fd0b5bc6"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/parameters.json": {
+      "bytes": 3586,
+      "sha256": "481bccf9852f82de7716c9ba23b13598c480e4e87c6a6e914a6cadc4d4912f4c"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/response.csv": {
+      "bytes": 182057,
+      "sha256": "3f9163f56fa37b0cc9c2b0d6dd305846ed98c7692fd862a1c00172e1591c6fc1"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/telemetry.csv": {
+      "bytes": 438799,
+      "sha256": "90b161430586ade08614be7e2fb17792169870ed41aba9426c8a58a6b9f28104"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/trajectory_setpoint.csv": {
+      "bytes": 66885,
+      "sha256": "9cca38694da7d3da72d4151e60842791d2187394f1b9110030e0eb69c2d5113e"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/vehicle_land_detected.csv": {
+      "bytes": 5298,
+      "sha256": "a04dba8d668d8fcf96640a7463af5171764593be119e7339c299dcb73e18720d"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/vehicle_local_position.csv": {
+      "bytes": 6763622,
+      "sha256": "9dc1ad455021092648a29984bd909f423a729dfe22f9a8cd5d0f2b15f8fa3e48"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/vehicle_local_position_groundtruth.csv": {
+      "bytes": 1801484,
+      "sha256": "b14a46b60fcfca6e321db3f484fb5a6219847f26c600c1f220937ee0acd02e27"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/vehicle_local_position_setpoint.csv": {
+      "bytes": 134745,
+      "sha256": "b3a865215886e9c9d9239c3cdd169b0500fbf5444a8f20c1e13ffc490e6d564d"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/vehicle_status.csv": {
+      "bytes": 32705,
+      "sha256": "37bfac0150c9a8ebe07f2e728fbd75f12093ac0b2e94db0ac0f25c7846185bf1"
+    },
+    "results/20261027-095927-gazebo-mpc-calibrated-scheduled-settled-standard-off/vehicle_thrust_setpoint.csv": {
+      "bytes": 253176,
+      "sha256": "8627ece32be97ab3c166d5676f9c1bd09b657d30819f6af3dc6349d037b50e06"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/calibration-model.json": {
+      "bytes": 5454,
+      "sha256": "da1585acff39cd39a4f9ef8cd23364cbfda323fe71049e9bf56f1c69a18fb28f"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/controller.csv": {
+      "bytes": 124760,
+      "sha256": "9af49a186902822701e790911c6f9c28b3431177363512445286cc1fd428649e"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/estimator-parameters.json": {
+      "bytes": 3807,
+      "sha256": "76521c7e2bd81f43e122cd4010bea832e3478b87c8cfdd6052ff3cd435c4866a"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/events.json": {
+      "bytes": 5141,
+      "sha256": "cfed964c321107759d4bcb67bb24f62069e55cd54b9aba88dafdc0b194313eb3"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/metadata.json": {
+      "bytes": 1854,
+      "sha256": "2cda3806f16d228e1577b3c16b9012a8e4d88c8bd67b07c7f7a9899ac414a0ac"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/metrics.json": {
+      "bytes": 1677,
+      "sha256": "1a546cc7376e877fc7972abe713a1525fe40d395e9fcff510a5563cace06d285"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/mpc-predictions.jsonl": {
+      "bytes": 1429765,
+      "sha256": "08f5a03045c067e6955fc5e8327321428790090a3d32736613ee9d9dd95aeb22"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/parameters.json": {
+      "bytes": 3586,
+      "sha256": "481bccf9852f82de7716c9ba23b13598c480e4e87c6a6e914a6cadc4d4912f4c"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/response.csv": {
+      "bytes": 187212,
+      "sha256": "5b286c17ca9ee607ab74c419f40c268f5ebc9133fe738e79aec1c8fa29f4207f"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/telemetry.csv": {
+      "bytes": 532080,
+      "sha256": "838a2c4a51d23db8ec36e07d9544c6cd27973bc3dd1b1bee0753bf80d564b029"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/trajectory_setpoint.csv": {
+      "bytes": 89088,
+      "sha256": "9b107994903318eeb9470e5d5e19d235436c2cb5f8b75b8b738a25921d67fe23"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/vehicle_land_detected.csv": {
+      "bytes": 6454,
+      "sha256": "e8372e2daefb4460d05a351f312a9cf11571059edb3b9f99acc5a92f5bb2b750"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/vehicle_local_position.csv": {
+      "bytes": 8330836,
+      "sha256": "543569135d35d5967fb8db26a6799abaa0da2a8ef80ff180e73a92078815743b"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/vehicle_local_position_groundtruth.csv": {
+      "bytes": 2196985,
+      "sha256": "65b2f75c871647dbc6a7f6ab15738fb4041d8dade5a7f40a548e20bf9cdd4ddc"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/vehicle_local_position_setpoint.csv": {
+      "bytes": 152705,
+      "sha256": "0849bf67fba2817e2493a41af85110d5234440881f03ca7315983106f47784fc"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/vehicle_status.csv": {
+      "bytes": 39360,
+      "sha256": "c605073ac3c365784684f2104866a6453987443e189ec29af39f6e08199449de"
+    },
+    "results/20261027-101018-gazebo-mpc-calibrated-scheduled-settled-gentle-off/vehicle_thrust_setpoint.csv": {
+      "bytes": 313160,
+      "sha256": "7af5ce9e1d80ff40d16c28f093f97b0fd1e2966802353be01b47043b49958172"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/calibration-model.json": {
+      "bytes": 5454,
+      "sha256": "da1585acff39cd39a4f9ef8cd23364cbfda323fe71049e9bf56f1c69a18fb28f"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/controller.csv": {
+      "bytes": 120490,
+      "sha256": "f7a8c477fcc94420062bc52e3154392ba48f1b5095cfc5fc432836fb746ab733"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/estimator-parameters.json": {
+      "bytes": 3807,
+      "sha256": "76521c7e2bd81f43e122cd4010bea832e3478b87c8cfdd6052ff3cd435c4866a"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/events.json": {
+      "bytes": 3816,
+      "sha256": "230cb86df462bc9e783c8bf0a2346929c70f14c90559eb15f30ca7a779fb384b"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/metadata.json": {
+      "bytes": 1854,
+      "sha256": "2d9676b18e1380fb1d7efc3c127dff84defc5a9d0751420e72dd7ccd3c626091"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/metrics.json": {
+      "bytes": 1666,
+      "sha256": "fa9adde7210ab0c32ab5993103fa341d64321dc471fb5ee3156a4a805a8c4772"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/mpc-predictions.jsonl": {
+      "bytes": 1419842,
+      "sha256": "d2ef7421191984c00888d6d7139ed2c49b5b486601522d8e10b41bc1d79a592f"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/parameters.json": {
+      "bytes": 3586,
+      "sha256": "481bccf9852f82de7716c9ba23b13598c480e4e87c6a6e914a6cadc4d4912f4c"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/response.csv": {
+      "bytes": 186884,
+      "sha256": "ae79d2e8d79f52179cf6b4e0767b2a4e8da28f0415496ea532f414289343f03b"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/telemetry.csv": {
+      "bytes": 400106,
+      "sha256": "2a65ce05cd51b8ad12c521b107b20683c77e8440cf84d01b704ede5668ed2633"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/trajectory_setpoint.csv": {
+      "bytes": 60017,
+      "sha256": "fdab9b949e18e21656c64f988376056aa298d4b1f16fe8d175539086c420e919"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/vehicle_land_detected.csv": {
+      "bytes": 4837,
+      "sha256": "52eb9be24c611c3b870b9eaf4fbfd1421c7c040327448e52b555f52a719d6512"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/vehicle_local_position.csv": {
+      "bytes": 6356573,
+      "sha256": "fffffbfb06ebceadc3f1c6b30bdeddb75fbbc59f68c5ddaf522fcfe86964eec3"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/vehicle_local_position_groundtruth.csv": {
+      "bytes": 1674876,
+      "sha256": "492a17039c5432c706028f6d91e6217090e45e2f16975316f2035ff2ba1861df"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/vehicle_local_position_setpoint.csv": {
+      "bytes": 128807,
+      "sha256": "12a2dd9540e20991428cfaa8f191cc09d8c586123aaa87d85a0ef03a8fdec598"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/vehicle_status.csv": {
+      "bytes": 30730,
+      "sha256": "ca820b4f8efbe94d006d932b225cc2295308cad9e1f7f8f26a8ee160258f70c0"
+    },
+    "results/20261027-101256-gazebo-mpc-calibrated-scheduled-settled-gentle-off/vehicle_thrust_setpoint.csv": {
+      "bytes": 233522,
+      "sha256": "6c253b86c7faea2aada7bb655d5dfffa2b0ec96955926ce56422fe6dfb616d48"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/calibration-model.json": {
+      "bytes": 5454,
+      "sha256": "da1585acff39cd39a4f9ef8cd23364cbfda323fe71049e9bf56f1c69a18fb28f"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/controller.csv": {
+      "bytes": 134472,
+      "sha256": "85ad18d98ead72a2bb90a45ddc69850c35b6c11307acf3bdd4bdb133b6e5f413"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/estimator-parameters.json": {
+      "bytes": 3807,
+      "sha256": "76521c7e2bd81f43e122cd4010bea832e3478b87c8cfdd6052ff3cd435c4866a"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/events.json": {
+      "bytes": 6505,
+      "sha256": "efeec5d7dbaffdfd1fdb9751f2d639b3098d508b85f5b15af7e99c3b4c465d9a"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/metadata.json": {
+      "bytes": 1986,
+      "sha256": "51b1ce1974352f6acc17587a1ac66fe821b63468f9d8716980782d3772b55381"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/metrics.json": {
+      "bytes": 1689,
+      "sha256": "9a3ae0367eafa38c10ba1b8752dc7b51d386abf2bac36cd32a0c1e0eb6379f20"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/mpc-predictions.jsonl": {
+      "bytes": 1438715,
+      "sha256": "007ac48cf6a169f6e0f418795da909815a714d8761d1e93c126fad9d074c109c"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/parameters.json": {
+      "bytes": 3586,
+      "sha256": "481bccf9852f82de7716c9ba23b13598c480e4e87c6a6e914a6cadc4d4912f4c"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/response.csv": {
+      "bytes": 208228,
+      "sha256": "a83ae7e77a10fc9fa053b7c3cff1d33d07ee5de0b7b37d436dfa8a827aafad6f"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/telemetry.csv": {
+      "bytes": 686991,
+      "sha256": "037bf03e64b13890fd45cf19a8ea13590d89792948094d20e7ddbabaad89c1be"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/trajectory_setpoint.csv": {
+      "bytes": 119569,
+      "sha256": "310bc7155f5715087ce49d726a4fca418ab0aa5be84de3ff6dac39a9adab6e2c"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/vehicle_land_detected.csv": {
+      "bytes": 8030,
+      "sha256": "44c31caaff22f07ab3210a408ac150cf5c462d2d360c18ca15f59ad89b7f7d07"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/vehicle_local_position.csv": {
+      "bytes": 10529966,
+      "sha256": "87d0d4fe6571a9ba22cc1ed0f430e59178f94057721ccdfc242a26b59d776060"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/vehicle_local_position_groundtruth.csv": {
+      "bytes": 2749536,
+      "sha256": "bedc850c238f5a09a6153386a75a7789911b9071591afcbf6719cd7231a941c7"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/vehicle_local_position_setpoint.csv": {
+      "bytes": 180607,
+      "sha256": "058748eedbecc2b789b66dd0391f2354f3efc03d1319a01d1910cccf0c87eada"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/vehicle_status.csv": {
+      "bytes": 48301,
+      "sha256": "2deac6b84dc8d69a7ecd71739a01c9a1c289af2b802310ff605e36de8b21a0bc"
+    },
+    "results/20261027-101456-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/vehicle_thrust_setpoint.csv": {
+      "bytes": 396817,
+      "sha256": "6387c00a288748497d5571daca4710bc81e8ea309392bba4b7d718b55dd7a9bc"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/calibration-model.json": {
+      "bytes": 5454,
+      "sha256": "da1585acff39cd39a4f9ef8cd23364cbfda323fe71049e9bf56f1c69a18fb28f"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/controller.csv": {
+      "bytes": 134834,
+      "sha256": "035f2d25ea6b968b01988ab8c52007f720334e99ae46ef27f7f9f836f4298fb3"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/estimator-parameters.json": {
+      "bytes": 3807,
+      "sha256": "76521c7e2bd81f43e122cd4010bea832e3478b87c8cfdd6052ff3cd435c4866a"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/events.json": {
+      "bytes": 4282,
+      "sha256": "af74c010dac8bcc91f374788c3b37ab75e2aa2b4d4987b517ef2f3edeee0dfbe"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/metadata.json": {
+      "bytes": 1986,
+      "sha256": "85fd92e28cc9418b197240283a51857ce42e16daee9063fb1b8bd1a11bfdcc4f"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/metrics.json": {
+      "bytes": 1682,
+      "sha256": "8570a61987a35e57bbd10f8431119479aeff5ff2b2b58ce01327c02083108b28"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/mpc-predictions.jsonl": {
+      "bytes": 1430393,
+      "sha256": "c506bb4897b7308e65979856f82aa31adb475b734a3afd0a57317f7732a1425c"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/parameters.json": {
+      "bytes": 3586,
+      "sha256": "481bccf9852f82de7716c9ba23b13598c480e4e87c6a6e914a6cadc4d4912f4c"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/response.csv": {
+      "bytes": 206878,
+      "sha256": "ad94de5e78cb43d4edb74c7744a4d7c4f99bea726acb0549ee82eb479f3d34c0"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/telemetry.csv": {
+      "bytes": 407811,
+      "sha256": "bc0a65a2b97a47f08bff6ee71ca6ab8f9ae3ca7d3ce8182a6f475bc5b1343c2a"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/trajectory_setpoint.csv": {
+      "bytes": 63065,
+      "sha256": "a6e4c27dd9ea6218faeab03e90f1e104beb6e96ee1d1aaa55c9a867978d8cf3a"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/vehicle_land_detected.csv": {
+      "bytes": 5075,
+      "sha256": "04fd7b409843058acd774ce5c5405afbd73ffaeb4038a93b672e33e60b9078da"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/vehicle_local_position.csv": {
+      "bytes": 6529654,
+      "sha256": "122d5ceca542ec474f9c52efdc1562102c6705156910113542e2fa6ad283eaf4"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/vehicle_local_position_groundtruth.csv": {
+      "bytes": 1721539,
+      "sha256": "1457a97c71f490c9de34e7a6f7c817f57b9f00119c020b3634a146d1f6056844"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/vehicle_local_position_setpoint.csv": {
+      "bytes": 128320,
+      "sha256": "290e6f81927f17c181caa0d49a5b6ffc135e69a03b18ec6cb3052a6bb9b87459"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/vehicle_status.csv": {
+      "bytes": 31448,
+      "sha256": "a31d1d36080ceecbe98457eb2e39fde55d8a2d04c15e205044f27413e9894724"
+    },
+    "results/20261027-101813-gazebo-mpc-calibrated-scheduled-settled-gentle-integral/vehicle_thrust_setpoint.csv": {
+      "bytes": 239959,
+      "sha256": "ff52b47a875a07a42baeb9fbc03cf440254bfc0ad7d153aea82835ccf5046bdc"
+    },
+    "results/20261027-flight-quality-pipeline/comparison.json": {
+      "bytes": 25942,
+      "sha256": "a24da9df7ba53b142e63abc160292a71fa0cabcf833476a94a699faad9ed1635"
+    },
+    "results/20261027-flight-quality-pipeline/flight-quality-comparison.pdf": {
+      "bytes": 43446,
+      "sha256": "0347fe5c8da8eca1e6b3adfad457fdec7d8cea6f692cf618eb2bea23b94c75ed"
+    },
+    "results/20261027-flight-quality-pipeline/flight-quality-comparison.png": {
+      "bytes": 326852,
+      "sha256": "547566acf168f8629992b3cbdf01fddffe40d0a746935747b6fafe5c40c8dbe3"
+    },
+    "results/20261027-flight-quality-pipeline/source-snapshot/altitude_mpc.py": {
+      "bytes": 7679,
+      "sha256": "81b8ab3f8bf6d42f066e91f9d3f2e97a392a14ca8fa690b703874de99b923193"
+    },
+    "results/20261027-flight-quality-pipeline/source-snapshot/analyze.py": {
+      "bytes": 13729,
+      "sha256": "38210a1efcdec052dc296f237a9e2804dcae3381d530ba324f28ba07d9b748fa"
+    },
+    "results/20261027-flight-quality-pipeline/source-snapshot/calibrated-altitude-model.json": {
+      "bytes": 5454,
+      "sha256": "da1585acff39cd39a4f9ef8cd23364cbfda323fe71049e9bf56f1c69a18fb28f"
+    },
+    "results/20261027-flight-quality-pipeline/source-snapshot/compare_flight_pipeline.py": {
+      "bytes": 7220,
+      "sha256": "ea2db58879285fb40c17ca1a775dab19701eb574455eeb075e4f9347c1161118"
+    },
+    "results/20261027-flight-quality-pipeline/source-snapshot/control_clock.py": {
+      "bytes": 1594,
+      "sha256": "5bf477ca88a87277050fe4e987f1ea1baf78c5192124b0696512ecb0d09cbae9"
+    },
+    "results/20261027-flight-quality-pipeline/source-snapshot/flight_quality.py": {
+      "bytes": 2107,
+      "sha256": "11d95fc5b0d250cf36c857fa4ebd9a3240700357b5484ae7406e489b4b95dad6"
+    },
+    "results/20261027-flight-quality-pipeline/source-snapshot/run-gazebo.sh": {
+      "bytes": 6187,
+      "sha256": "284695ca2d1fa0030be0e2f444aeaf3ea36054bc17d339c936f58bedf87396f1"
+    },
+    "results/20261027-flight-quality-pipeline/source-snapshot/run-on-vm.sh": {
+      "bytes": 2944,
+      "sha256": "bade8a36b66bc7a0c102e658d11a92a0f33c3f5351505791a5d0495f4f11b6d3"
+    },
+    "results/20261027-flight-quality-pipeline/source-snapshot/run_experiment.py": {
+      "bytes": 27988,
+      "sha256": "a2bd12d358f3eb9e0a7b00b0aff51869500698b9382185d3bf9a35dc799092df"
+    },
+    "results/20261027-flight-quality-pipeline/source-snapshot/test_bias_closed_loop.py": {
+      "bytes": 1266,
+      "sha256": "37109af04bc8b48d0583d7e268262f45d5903d173104c8013251cf9100d590a8"
+    },
+    "results/20261027-flight-quality-pipeline/source-snapshot/test_flight_quality.py": {
+      "bytes": 1036,
+      "sha256": "bf886a7f51a121fe978cf8684027e81429c74364b1ed114cb4cf00100b4ec673"
+    },
+    "results/20261027-flight-quality-pipeline/source-snapshot/verification.json": {
+      "bytes": 1453,
+      "sha256": "f19c3e0fc80e76a768a6e634b9bf1ca366ac30e7d897f106847e185727fd9dc8"
+    },
+    "scripts/altitude_mpc.py": {
+      "bytes": 7679,
+      "sha256": "81b8ab3f8bf6d42f066e91f9d3f2e97a392a14ca8fa690b703874de99b923193"
+    },
+    "scripts/analyze.py": {
+      "bytes": 13729,
+      "sha256": "38210a1efcdec052dc296f237a9e2804dcae3381d530ba324f28ba07d9b748fa"
+    },
+    "scripts/analyze_latest.py": {
+      "bytes": 585,
+      "sha256": "a135fbcd4ba553e212c53a07e0a3005cd3781a6244948146850a8a2a88873499"
+    },
+    "scripts/audit_timing_errors.py": {
+      "bytes": 7554,
+      "sha256": "f154b2fe1ea4a6aaca512452e4201137c17e737407b88fbea260c4ec9f46c8b0"
+    },
+    "scripts/compare_controllers.py": {
+      "bytes": 5787,
+      "sha256": "f2a5b9566cbe0cd2cdb6a7d100d39980e3eb86d25b72b038382e9613c79b89da"
+    },
+    "scripts/compare_flight_pipeline.py": {
+      "bytes": 7220,
+      "sha256": "ea2db58879285fb40c17ca1a775dab19701eb574455eeb075e4f9347c1161118"
+    },
+    "scripts/compare_mpc_models.py": {
+      "bytes": 11732,
+      "sha256": "64660bf0f05ca7117df8ccbc04848ecca4c6a16473a1bd37a0d8f025ebc1223e"
+    },
+    "scripts/compare_timing.py": {
+      "bytes": 5772,
+      "sha256": "e35d5ff95320e6d51c51261c1733682d25fcc8c75f3f78e1ac7faa8992c3e526"
+    },
+    "scripts/control_clock.py": {
+      "bytes": 1594,
+      "sha256": "5bf477ca88a87277050fe4e987f1ea1baf78c5192124b0696512ecb0d09cbae9"
+    },
+    "scripts/flight_quality.py": {
+      "bytes": 2107,
+      "sha256": "11d95fc5b0d250cf36c857fa4ebd9a3240700357b5484ae7406e489b4b95dad6"
+    },
+    "scripts/gazebo-gui.config": {
+      "bytes": 1771,
+      "sha256": "8291f018a5e7551a1311fe842ff9918b9f56400aa2789fc569516b9959de39c6"
+    },
+    "scripts/identify_altitude_model.py": {
+      "bytes": 6943,
+      "sha256": "a51e86f1dd842529a0969933557a41d3321cf4f4a4afe504f930c565743ee610"
+    },
+    "scripts/package_results.py": {
+      "bytes": 12816,
+      "sha256": "f5f5143504fda7ca1ada2f8513a9d36e59144f13ca66da0b6262d48f1d8947ec"
+    },
+    "scripts/prepare-ogre2-resources.py": {
+      "bytes": 1840,
+      "sha256": "51fa79edb3cd36a4c0a76a09071fe32bc0354ebc125acaac47711271da4d6d1e"
+    },
+    "scripts/render_final_chart_zh.py": {
+      "bytes": 2716,
+      "sha256": "69436c15ddbf1633f22fb22421648d3473ca373d6b4646ba35522e9b6b710528"
+    },
+    "scripts/run-gazebo.sh": {
+      "bytes": 6187,
+      "sha256": "284695ca2d1fa0030be0e2f444aeaf3ea36054bc17d339c936f58bedf87396f1"
+    },
+    "scripts/run-on-vm.sh": {
+      "bytes": 2944,
+      "sha256": "bade8a36b66bc7a0c102e658d11a92a0f33c3f5351505791a5d0495f4f11b6d3"
+    },
+    "scripts/run_experiment.py": {
+      "bytes": 27988,
+      "sha256": "a2bd12d358f3eb9e0a7b00b0aff51869500698b9382185d3bf9a35dc799092df"
+    },
+    "scripts/stop-gazebo.sh": {
+      "bytes": 568,
+      "sha256": "b6f58f95bf0ab1f71a5cb3693ed81f02b669e3e50c1d73fce124b426f77e1213"
+    },
+    "scripts/test_altitude_mpc.py": {
+      "bytes": 2801,
+      "sha256": "309fa5488d7a630396e6043fc087c160a218e1d16a1e381e84a713e08975d68e"
+    },
+    "scripts/test_bias_closed_loop.py": {
+      "bytes": 1266,
+      "sha256": "37109af04bc8b48d0583d7e268262f45d5903d173104c8013251cf9100d590a8"
+    },
+    "scripts/test_control_clock.py": {
+      "bytes": 1517,
+      "sha256": "4649e3605c345bd50964e10a33081ba9958d41980db521e041fa47b20dbae9e2"
+    },
+    "scripts/test_experiment_timing.py": {
+      "bytes": 2438,
+      "sha256": "4cfbc7a65b4363458be5a6539ee6a23456e458abf894c020078d3adf7dac24e3"
+    },
+    "scripts/test_flight_quality.py": {
+      "bytes": 1036,
+      "sha256": "bf886a7f51a121fe978cf8684027e81429c74364b1ed114cb4cf00100b4ec673"
+    }
+  }
+}

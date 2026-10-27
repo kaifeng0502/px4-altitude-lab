@@ -1,0 +1,8 @@
+[
+  {
+    "event": "error",
+    "boot_s": 0.0,
+    "utc": "2026-10-26T16:03:30.615229+00:00",
+    "message": "Owned PX4 simulation exited; inspect px4-console.log"
+  }
+]

@@ -1,0 +1,183 @@
+[
+  {
+    "event": "preflight",
+    "boot_s": 5.3,
+    "utc": "2026-10-27T02:10:24.481358+00:00"
+  },
+  {
+    "event": "ground_alignment_wait",
+    "boot_s": 5.364,
+    "utc": "2026-10-27T02:10:24.532124+00:00",
+    "elapsed_sim_s": 0.06400000000000006,
+    "quality": {
+      "ready": false,
+      "sample_count": 43
+    }
+  },
+  {
+    "event": "ground_alignment_wait",
+    "boot_s": 20.364,
+    "utc": "2026-10-27T02:10:39.790466+00:00",
+    "elapsed_sim_s": 15.064,
+    "quality": {
+      "ready": false,
+      "sample_count": 501,
+      "height_std_m": 0.048400993118833655,
+      "height_slope_ned_m_s": 0.01590923028178534,
+      "mean_ned_velocity_m_s": 0.11324020092953703,
+      "rms_ned_velocity_m_s": 0.11398856002516565,
+      "window_s": 10.0
+    }
+  },
+  {
+    "event": "ground_alignment_wait",
+    "boot_s": 35.384,
+    "utc": "2026-10-27T02:10:54.865801+00:00",
+    "elapsed_sim_s": 30.084,
+    "quality": {
+      "ready": false,
+      "sample_count": 500,
+      "height_std_m": 0.01646451002018583,
+      "height_slope_ned_m_s": -0.003050395006407705,
+      "mean_ned_velocity_m_s": 0.04018378211557865,
+      "rms_ned_velocity_m_s": 0.04081476093104511,
+      "window_s": 10.0
+    }
+  },
+  {
+    "event": "ground_alignment_wait",
+    "boot_s": 50.4,
+    "utc": "2026-10-27T02:11:09.953109+00:00",
+    "elapsed_sim_s": 45.1,
+    "quality": {
+      "ready": false,
+      "sample_count": 501,
+      "height_std_m": 0.016622671246542115,
+      "height_slope_ned_m_s": -0.00416332359755128,
+      "mean_ned_velocity_m_s": 0.021759440076882262,
+      "rms_ned_velocity_m_s": 0.025740060244502046,
+      "window_s": 10.0
+    }
+  },
+  {
+    "event": "ground_alignment_wait",
+    "boot_s": 65.4,
+    "utc": "2026-10-27T02:11:25.023130+00:00",
+    "elapsed_sim_s": 60.10000000000001,
+    "quality": {
+      "ready": false,
+      "sample_count": 501,
+      "height_std_m": 0.012256420725889002,
+      "height_slope_ned_m_s": 0.003652282131933943,
+      "mean_ned_velocity_m_s": 0.017392649781888356,
+      "rms_ned_velocity_m_s": 0.017789120530488322,
+      "window_s": 10.0
+    }
+  },
+  {
+    "event": "ground_alignment_wait",
+    "boot_s": 80.42,
+    "utc": "2026-10-27T02:11:40.077495+00:00",
+    "elapsed_sim_s": 75.12,
+    "quality": {
+      "ready": false,
+      "sample_count": 501,
+      "height_std_m": 0.012526268966964531,
+      "height_slope_ned_m_s": -0.003989077420883605,
+      "mean_ned_velocity_m_s": 0.01429857715718939,
+      "rms_ned_velocity_m_s": 0.01473345106963589,
+      "window_s": 10.0
+    }
+  },
+  {
+    "event": "ground_alignment_complete",
+    "boot_s": 86.224,
+    "utc": "2026-10-27T02:11:45.879704+00:00",
+    "elapsed_sim_s": 80.924,
+    "quality": {
+      "ready": true,
+      "sample_count": 500,
+      "height_std_m": 0.004133938272833691,
+      "height_slope_ned_m_s": -0.00039839078191923757,
+      "mean_ned_velocity_m_s": 0.012073731442913413,
+      "rms_ned_velocity_m_s": 0.012212828395582692,
+      "window_s": 10.0
+    }
+  },
+  {
+    "event": "ground_reference",
+    "boot_s": 86.224,
+    "utc": "2026-10-27T02:11:45.881143+00:00",
+    "ned_z_m": 0.14289208501577377,
+    "sample_count": 150
+  },
+  {
+    "event": "takeoff",
+    "boot_s": 88.12,
+    "utc": "2026-10-27T02:11:47.776539+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "hover_stable",
+    "boot_s": 99.5,
+    "utc": "2026-10-27T02:11:59.196114+00:00",
+    "target_height_m": 2.0
+  },
+  {
+    "event": "controller_switch",
+    "boot_s": 99.5,
+    "utc": "2026-10-27T02:11:59.196671+00:00",
+    "controller": "mpc",
+    "target_height_m": 2.0,
+    "config": {
+      "type": "affine_two_state_linear_mpc",
+      "dt": 0.1,
+      "horizon": 30,
+      "height_weight": 12.0,
+      "velocity_weight": 3.0,
+      "acceleration_weight": 0.2,
+      "delta_acceleration_weight": 0.8,
+      "velocity_slack_weight": 1000.0,
+      "max_velocity": 1.0,
+      "min_acceleration": -0.8,
+      "max_acceleration": 0.8,
+      "max_jerk": 2.0,
+      "acceleration_gain": 1.5492651348831779,
+      "acceleration_bias": 0.041089602835091,
+      "state": [
+        "ground_relative_height_m",
+        "up_velocity_m_s"
+      ],
+      "input": "net_up_acceleration_m_s2",
+      "disturbance_observer": false,
+      "terminal_cost": "discrete LQR on height and velocity",
+      "prediction_equation": "h_dot=v; v_dot=acceleration_gain*u+acceleration_bias",
+      "equilibrium_command_m_s2": -0.026521995435074032,
+      "constraints": "soft predicted speed bound with quadratic slack penalty; hard acceleration and delta-acceleration bounds"
+    }
+  },
+  {
+    "event": "height_step",
+    "boot_s": 109.544,
+    "utc": "2026-10-27T02:12:09.232260+00:00",
+    "target_height_m": 4.0
+  },
+  {
+    "event": "step_observation_complete",
+    "boot_s": 139.56,
+    "utc": "2026-10-27T02:12:39.334519+00:00",
+    "final_height_m": 3.981752596795559,
+    "final_up_velocity_m_s": 0.013102343305945396,
+    "observation_sim_s": 30
+  },
+  {
+    "event": "landing",
+    "boot_s": 139.624,
+    "utc": "2026-10-27T02:12:39.386500+00:00"
+  },
+  {
+    "event": "landed_disarmed",
+    "boot_s": 149.124,
+    "utc": "2026-10-27T02:12:48.911913+00:00"
+  }
+]

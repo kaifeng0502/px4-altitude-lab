@@ -1,0 +1,23 @@
+{
+  "step_boot_s": 43.832,
+  "baseline_height_m": 1.9707281589508057,
+  "target_height_m": 4.0,
+  "commanded_step_amplitude_m": 2.0,
+  "rise_time_definition": "first upward crossings of 2.2 m and 3.8 m in estimated height",
+  "rise_time_10_90_s": 2.240000000000002,
+  "overshoot_m": 0.026852130889892578,
+  "overshoot_percent_of_step": 1.342606544494629,
+  "settling_time_within_5cm_s": 4.948,
+  "final_mean_height_m": 4.016311168670654,
+  "final_mean_error_m": -0.016311168670654297,
+  "final_mean_true_height_m": 3.952907085418701,
+  "final_mean_estimate_minus_truth_m": 0.06340408325195312,
+  "ground_reference_ned_z_m": 0.07261766493320465,
+  "truth_ground_reference_ned_z_m": 0.013000184670090675,
+  "peak_up_velocity_m_s": 1.7516752481460571,
+  "observation_window_s": 29.892000000000003,
+  "ulog_dropout_count": 0,
+  "ulog_dropout_total_ms": 0,
+  "landed_event_confirmed": true,
+  "controller": "pid"
+}

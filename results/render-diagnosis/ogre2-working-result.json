@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-26T20:43:28.637623+08:00",
+  "gui_pid": 4039,
+  "environment": {
+    "LIBGL_ALWAYS_SOFTWARE": "1",
+    "QT_QPA_PLATFORM": "xcb",
+    "QT_XCB_GL_INTEGRATION": "xcb_glx",
+    "__EGL_VENDOR_LIBRARY_FILENAMES": "/dev/null",
+    "GZ_RENDERING_RESOURCE_PATH": null,
+    "DISPLAY": ":0"
+  },
+  "renderer_log_excerpt": [
+    "20:38:54: Loading library /opt/ros/jazzy/opt/gz_ogre_next_vendor/lib/OGRE-Next/RenderSystem_GL3Plus.so",
+    "20:38:54: GL_VERSION = 4.5 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.24.04.2",
+    "20:38:54: GL_RENDERER = llvmpipe (LLVM 20.1.2, 128 bits)",
+    "20:38:54: Added resource location '/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz/gz-rendering8/ogre2/media/2.0/scripts/Compositors' of type 'FileSystem' to resource group 'General'",
+    "20:38:54: Added resource location '/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz/gz-rendering8/ogre2/media/2.0/scripts/materials/Common' of type 'FileSystem' to resource group 'General'",
+    "20:38:54: Added resource location '/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz/gz-rendering8/ogre2/media/2.0/scripts/materials/Common/GLSL' of type 'FileSystem' to resource group 'General'",
+    "20:38:54: Added resource location '/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz/gz-rendering8/ogre2/media/2.0/scripts/materials/Terra' of type 'FileSystem' to resource group 'General'",
+    "20:38:54: Added resource location '/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz/gz-rendering8/ogre2/media/2.0/scripts/materials/Terra/GLSL' of type 'FileSystem' to resource group 'General'",
+    "20:38:54: HLMS Library path '/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz/gz-rendering8/ogre2/media/Hlms/Gz' has no piece files. Are you sure you provided the right path with read access?",
+    "20:38:54: HLMS Library path '/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz/gz-rendering8/ogre2/media/Hlms/Gz' has no piece files. Are you sure you provided the right path with read access?",
+    "20:38:54: Added resource location '/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz/gz-rendering8/ogre2/media' of type 'FileSystem' to resource group 'General'",
+    "20:38:54: Added resource location '/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz/gz-rendering8/ogre2/media/materials/programs' of type 'FileSystem' to resource group 'General'"
+  ],
+  "visible_confirmation": "Gazebo GUI text, ground, and x500_4 visible in UTM screenshot",
+  "world_paused": true,
+  "flight_rerun_after_fix": false,
+  "hardware_ogre2_fixed": false,
+  "workaround": "Stock Ogre 2 with software GLX, EGL vendor discovery disabled for GUI, Xorg desktop"
+}

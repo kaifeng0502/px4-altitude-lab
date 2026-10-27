@@ -1,0 +1,14 @@
+{
+  "px4_commit": "d6f12ad1c4f70ad3230afd7d86e971421e02fef4",
+  "model": "sihsim_quadx",
+  "instance": 4,
+  "label": "baseline",
+  "simulation": true,
+  "status": "failed",
+  "initial_height_m": 2,
+  "final_height_m": 4,
+  "error": "Did not settle at 4 m",
+  "ulog_files": [
+    "runtime/log/2026-10-26/08_52_58.ulg"
+  ]
+}
